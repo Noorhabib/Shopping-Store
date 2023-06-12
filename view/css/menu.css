@@ -1,0 +1,28 @@
+body {
+  font-family: Tahoma;
+  font-size: 14px;
+}
+
+#menu {
+  font-family: Tahoma;
+}
+ 
+#menu td{
+  border: 3px solid #DD0000;
+  padding: 6px;
+  color: #000;
+}
+
+#menu a{
+  color: #0000ff;
+}
+
+#menu a:visited{
+  color: #0000ff;
+}
+
+
+#menu a:hover {
+  color: #ff0000;
+  background-color: #ddd;
+}
