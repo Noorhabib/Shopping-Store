@@ -1,0 +1,29 @@
+CREATE DATABASE csc350;
+
+create table cart (
+  userid varchar(20) NOT NULL,
+  item varchar(20) NOT NULL,
+  quantity int(11) NOT NULL,
+  price float NOT NULL,
+  constraint  primary key(userid,item)
+);
+
+create table login (
+  userid varchar(20) NOT NULL,
+  password varchar(20) NOT NULL,
+  constraint  primary key(userid)
+);
+CREATE TABLE `catalog` (
+  `code` varchar(20) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `image` varchar(20) NOT NULL,
+  `description` varchar(500) NOT NULL,
+  `price` float NOT NULL
+);
+
+INSERT INTO `catalog` (`code`, `name`, `image`, `description`, `price`) VALUES
+('MacAir', 'MacBookAir-Gold', 'MacBook.jpg', 'Apple M1 chip with 8‑core CPU, 7‑core GPU, 16‑core Neural Engine, 8GB unified memory, 256GB SSD storage, 13-inch Retina display with True Tone, Two Thunderbolt, USB 4 ports, 30W USB-C Power Adapter, Backlit Magic Keyboard with Touch ID', 1299.99),
+('Fonemask', 'Fonemask-TemperGlass', 'Fonemask.jpg', '[Grade AAA Quality Glass] Tempered glass made of high Alumina Silica multilayer tempered Glass and Korean AB Glue. Glue is able to withstand temperatures between -5°F (-20°C) to 165°F (80°F) without suffering any damage.', 14.99),
+('Airpods', 'Airpods-3rd-Gen', 'Airpods.jpg', 'AirPods are lightweight and offer a contoured design. They sit at just the right angle for comfort and to better direct audio to your ear. The stem is 33 percent shorter than AirPods (2nd generation) and includes a force sensor to easily control music and calls.',299.99),
+('Asus7', 'AsusRog-7', 'Asusrog.jpg', 'The phone is touted to come with 18 GB of RAM + 512 GB of internal storage. You will not have to worry about space constraints while saving your files such as videos, songs, games, documents, and more. In addition to this, the upcoming phone is rumored to be powered by a Octa-core (1x2.84 GHz Kryo 680 & 3x2.42 GHz Kryo 680 & 4x1.80 GHz Kryo 680) processor that will let you enjoy a smooth and faster performance.',1599.99),
+('ArGlasses', 'Nreal AR-Glasses', 'Arglasses.jpg', 'Enjoy the beautiful 130" spatial display in Air Casting mode that amplifies your mobile, PC and gaming experience. No more neck pains. Watch a movie or play a game while lying in bed or on a pool chair. The fun is yours to choose.',379.99);
